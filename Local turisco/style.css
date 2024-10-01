@@ -1,44 +1,58 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: rgb(255, 251, 247);
+  line-height: 1.6;
+
 }
 
 #page{
-  box-sizing: border-box;
-  margin: 64px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
   font-size: 40px;
-  margin: 0 0 64px 0;
+  margin: 30px 0 30px 0;
 
+}
+
+.dcpt-busan {
+  margin: 64px 0 64px 0;
+}
+  
+.description-busan { 
+  padding: 0 30px 0 30px;
+  text-align: center;
+  color: #333333;
+}
+
+.description{
+  width: 1120px;
+  height: 88px;
+  color: #333333;
+  margin: 15px 0 15px 0;
+  size: 16px;
 }
 
 h3 { 
   color: #E1624F;
   font-size: 16px;
-  margin-top: 64px;
-  margin-bottom: 12px;
-} 
-  
-#context { 
-  text-align: center;
-  color: #333333;
+  margin: 64px 0 20px;
 }
 
 img {
   border-radius: 26px;
-  margin: 24px 0 24px 0;
-  /* text-align: left;
-  vertical-align: baseline; */
-}
-
-.temple {
-  vertical-align: auto;
-  
+  margin: 24px;
+  max-width: 100%;
+  height: auto;
 }

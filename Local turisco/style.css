@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   font-family: "Open Sans", sans-serif;
   line-height: 150%;
 }
@@ -15,7 +15,7 @@ body {
   padding: 24px 0 0 24px;
 }
 
-#page{
+#page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,8 +29,9 @@ h1 {
   padding: 0 0 5px 24px;
   margin-top: 1px;
 }
+
 h2 {
-  padding: 24px 0 0 0;
+  padding-left: 24px;
 }
 
 .divider {
@@ -40,63 +41,66 @@ h2 {
   background-color: #d9d9d9;
 }
 
-  
-.description-busan { 
+.description-busan {
   font-size: 16px;
-  padding: 0 50px 0 24px;
+  margin: 24px 0 40px 0;
   text-align: center;
-  color: #333333;
-  
+  color: #333;
 }
 
-.content-card{
+.content-card {
   width: 1120px;
-  color: #333333;
-  size: 16px;
+  color: #333;
+  font-size: 16px; 
   padding: 5px 0 0 24px;
 }
 
-.headline { 
+.headline {
   color: #E1624F;
   font-size: 14px;
-  margin: 1px;
-  padding: 24px 0 0 24px;
+  margin: 64px 0 0 24px;
   line-height: 22px;
   text-transform: uppercase;
 }
 
-
-
 ul {
   padding: 0 0 24px 24px;
-  list-style-type:disc;
+  list-style-type: disc;
   font-size: 16px;
 }
 
-
 ul li::marker {
-  color: #333333;
-  
+  color: #333;
+}
+
+.list-number {
+  font-weight: bold;
+  color: #000000;
+  font-size: 24px; 
+}
+
+.null-item {
+  list-style-type: none
 }
 
 .story {
   color: blue;
-  margin: 0 0 0 24px;
+  margin-left: 24px; 
 }
 
 .list {
   color: #591B98;
-  margin: 0 0 0 24px;
+  margin-left: 24px;
 }
 
 .family {
   color: #E5245E;
-  margin: 0 0 0 24px;
+  margin-left: 24px;
 }
 
 .budget {
   color: #E95E10;
-  margin: 0 0 0 24px;
+  margin-left: 24px;
 }
 
 img {
@@ -104,19 +108,20 @@ img {
   margin: 48px 0 0 24px;
   max-width: 100%;
   height: auto;
-  
 }
 
 .description {
+  margin: 48px ;
   text-align: center;
-  color: #333333;
+  color: #333;
 }
 
-footer {  
-  margin: 65px 0 40px 0;
+footer {
+  margin:48px;
   text-align: center;
-  color: #333333;
+  color: #333;
 }
+
 .heart {
   margin: 0;
 }

@@ -1,0 +1,32 @@
+header {
+  padding: 54px 163px 231px 163px;
+  border: 1px solid red;
+  background-image: url(../asset/Background_Intro.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.content-header {
+  text-align: center;
+  letter-spacing: 1.2fr;
+
+  max-width: 680px;
+  max-height: 465px;
+  border: 1px solid ;
+  padding-bottom: 80px;
+}
+
+.content-tag {
+  border: 1px solid green;
+  li {
+    display: inline-flex;
+    gap: 16px;
+  }
+
+}
+
+#avatar {
+  padding-bottom: 56px;
+
+}

@@ -19,10 +19,19 @@ header {
 
 .content-tag {
   border: 1px solid green;
+  max-width: 754px;
+  max-height: 40px;
+
   li {
-    display: inline-flex;
-    gap: 16px;
+    display: inline;
+    padding: 16px;
+    
+    width: 114px;
+    height: 40px;
+    
+    text-decoration: none;
   }
+
 
 }
 

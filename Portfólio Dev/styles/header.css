@@ -1,10 +1,10 @@
-header {
+/* header {
   padding: 54px 163px 231px 163px;
   border: 1px solid red;
   background-image: url(../asset/Background_Intro.png) ;
   background-size: cover;
   background-repeat: no-repeat;
-
+  margin-inline: auto;
 }
 
 .content-header {
@@ -38,4 +38,4 @@ header {
 #avatar {
   padding-bottom: 56px;
 
-}
+} */

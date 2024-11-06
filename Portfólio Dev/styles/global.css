@@ -36,14 +36,29 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
+a:hover {
+  color: var(--gray-500);
+}
+
+h1, h2, h3 {
+  font: inherit;
+}
 
 .container {
   max-width: 1280px;
 }
 
-
 mark {
   background-color: var(--gray-200);
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
 }

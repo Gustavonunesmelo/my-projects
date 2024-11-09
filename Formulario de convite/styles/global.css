@@ -6,14 +6,16 @@
 
 :root {
   --font-family: "Open Sans", serif;
-  --logo: 400 4rem auto var(--font-family);
+  --body-md: 600 1rem/auto var(--font-family);
+  --body-sm: 600 0.875rem/auto var(--font-family);
+  --body-xs: 600 0.75rem/auto var(--font-family);
 
   --font-family: "Baloo 2", serif;
-  --heading-md: bold 2.8rem auto var(--font-family);
-  --heading-sm: bold 1.8rem auto var(--font-family);
+  --heading-md: 700 2.8rem/auto var(--font-family);
+  --heading-sm: 700 1.8rem/auto var(--font-family);
 
   --font-family: "Leckerli One", serif;
-  
+  --logo: 400 4rem auto var(--font-family);
 
   --text: 400 1rem/1.5 var(--font-family);
   --text-sm: 400 0.875rem/1.4 var(--font-family);

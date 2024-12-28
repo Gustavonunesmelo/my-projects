@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+
+  <link rel="stylesheet" href="style/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <img class="grid " src="img/logo.png" alt="quicklist Logo">
+    <div class="">
+      <h1>Compras da semana</h1>
+    </div>
+    <form id="shoppingForm">
+      <label for="item">Adicionar Item:</label>
+      <input type="text" id="item" name="item" required>
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="shoppingList">
+      <!-- Os itens da lista serão adicionados aqui -->
+    </ul>
+  </div>
+
+  <div class="wrapper">
+    <div class="box a">a</div>
+    <div class="box b">b</div>
+    <div class="box c">c</div>
+    <div class="box d">d</div>
+    <div class="box e">e</div>
+    <div class="box f">f</div>
+  </div>
+  
+
+  <script>
+    const form = document.getElementById('shoppingForm');
+    const list = document.getElementById('shoppingList');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const itemInput = document.getElementById('item');
+      const itemValue = itemInput.value.trim();
+
+      if (itemValue) {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+          <span>${itemValue}</span>
+          <button onclick="removeItem(this)">Remover</button>
+        `;
+        list.appendChild(listItem);
+        itemInput.value = '';
+      }
+    });
+
+    function removeItem(button) {
+      const listItem = button.parentElement;
+      list.removeChild(listItem);
+    }
+  </script>
+</body>
+</html>

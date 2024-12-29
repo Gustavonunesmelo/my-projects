@@ -10,34 +10,28 @@
 
   <link rel="stylesheet" href="style/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
 </head>
 <body>
-  <div class="container">
-    <img class="grid " src="img/logo.png" alt="quicklist Logo">
-    <div class="">
-      <h1>Compras da semana</h1>
+  <div id="list" class="container">
+    <div class="title">
+        <img class="logo" src="img/logo.png" alt="quicklist Logo"><br>
+      </div>
+    <div class="main">
+      <div>
+        <img src="img/link button.png" alt="">
+        <h2>Compras da semana</h2>
+      </div>
+      <form id="shoppingForm">
+        <label for="item"></label>
+        <input type="text" id="item" name="item" placeholder="Adicionar um novo item">
+        <button class="add" type="submit">Adicionar item</button>
+      </form>
+      <ul id="shoppingList" class="purform">
+        <!-- Os itens da lista serão adicionados aqui -->
+         <li>Banana</li>
+      </ul>
+        </div>
     </div>
-    <form id="shoppingForm">
-      <label for="item">Adicionar Item:</label>
-      <input type="text" id="item" name="item" required>
-      <button type="submit">Adicionar</button>
-    </form>
-    <ul id="shoppingList">
-      <!-- Os itens da lista serão adicionados aqui -->
-    </ul>
-  </div>
-
-  <div class="wrapper">
-    <div class="box a">a</div>
-    <div class="box b">b</div>
-    <div class="box c">c</div>
-    <div class="box d">d</div>
-    <div class="box e">e</div>
-    <div class="box f">f</div>
-  </div>
-  
-
   <script>
     const form = document.getElementById('shoppingForm');
     const list = document.getElementById('shoppingList');

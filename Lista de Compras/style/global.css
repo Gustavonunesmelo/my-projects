@@ -6,64 +6,54 @@
 
 :root {
   font-family: "Inter", serif;
-  background-color: #F4F5FB;
+  
+
+
 }
 
 .container {
-  max-width: 85rem;
+  max-width: 1366px;
   margin: auto;
-  background: white;
+  background: #F4F5FB;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+#list {
+  display: flex;
+  flex-direction: column;
+  
+  .title {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
 
-h1 {
-  text-align: center;
-  color: #333;
+  .main {
+    padding-left: 25%;
+    margin-top: 5rem;
+
+    h2 {
+      padding-block: 16px 44px;
+    }
+  }
 }
+
 ul {
   list-style: none;
-  padding: 0;
 }
-ul li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-ul li:last-child {
-  border-bottom: none;
-}
+
 button {
-  background-color: #3498db;
+  background-color: #CA3884;
   color: white;
   border: none;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 button:hover {
-  background-color: #2980b9;
+  background-color: #A52C6B;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 
-  111px 
-  100px 
-  100px;
-  grid-gap: 1px;
-  background-color: #fff;
-  color: #444;
-}
 
-.box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}
 

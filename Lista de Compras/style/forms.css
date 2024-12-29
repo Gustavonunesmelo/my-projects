@@ -1,0 +1,32 @@
+form {
+  margin-top: .5rem;
+}
+
+#shoppingForm {
+  display: flex;
+  justify-items: center;
+  gap: 1rem;
+
+  & input{
+    all: unset; 
+  }
+
+  #item{
+    border: 2px solid lightgray;
+    border-radius: 10px;
+
+    background: white;
+    
+    padding: 11px;
+
+    width: 451px;
+  }
+
+  .add {
+    width: 161px;
+  }
+}
+
+
+
+

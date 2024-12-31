@@ -1,8 +1,30 @@
-ul {
-  padding-top: 40px; 
+
+#shoppingList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-block: 12px;
+
+  margin-top: 40px;
+  max-width: 680px;
+
+  align-items: center;
 }
 
 li {
-  border: 2px solid black;
+  border: 2px solid none;
+  border-radius: 12px;
+
+  background-color: white;
+
   width: 627px;
+  height: 49px;
+
+  padding: 11px;
+  
 }
+
+.checkbox-image {
+  background-image: url(../img/icons/checkbox-checked.svg);
+}
+

@@ -11,21 +11,35 @@ form {
     all: unset; 
   }
 
-  #item{
-    border: 2px solid lightgray;
+  input, 
+  textarea, 
+  select {
+    appearance: none;
+
+    border: 2px solid #D1D5DB;
     border-radius: 10px;
 
     background: white;
     
     padding: 11px;
-
     width: 451px;
+    
+  }
+
+  input:hover {
+    border: 2px solid #B9C2D0;
+  }
+
+  #item:focus { 
+    border: 2px solid #A52C6B;
   }
 
   .add {
     width: 161px;
   }
 }
+
+
 
 
 

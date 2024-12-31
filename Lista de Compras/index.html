@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,13 +10,16 @@
   <title>Lista de Compras</title>
 
   <link rel="stylesheet" href="style/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <div id="list" class="container">
     <div class="title">
-        <img class="logo" src="img/logo.png" alt="quicklist Logo"><br>
-      </div>
+      <img class="logo" src="img/logo.png" alt="quicklist Logo"><br>
+    </div>
     <div class="main">
       <div>
         <img src="img/link button.png" alt="">
@@ -27,11 +31,11 @@
         <button class="add" type="submit">Adicionar item</button>
       </form>
       <ul id="shoppingList" class="purform">
+        <div class="checkbox-image"></div>
         <!-- Os itens da lista serão adicionados aqui -->
-         <li>Banana</li>
       </ul>
-        </div>
     </div>
+  </div>
   <script>
     const form = document.getElementById('shoppingForm');
     const list = document.getElementById('shoppingList');
@@ -58,4 +62,5 @@
     }
   </script>
 </body>
+
 </html>

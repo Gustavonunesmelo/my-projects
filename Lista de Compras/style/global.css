@@ -6,9 +6,6 @@
 
 :root {
   font-family: "Inter", serif;
-  
-
-
 }
 
 .container {
@@ -22,7 +19,7 @@
 #list {
   display: flex;
   flex-direction: column;
-  
+
   .title {
     justify-content: center;
     align-items: center;
@@ -51,9 +48,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #A52C6B;
 }
-
-
-

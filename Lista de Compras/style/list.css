@@ -1,4 +1,3 @@
-
 #shoppingList {
   display: flex;
   flex-direction: column;
@@ -13,12 +12,16 @@
 
 li {
   display: flex;
-  justify-content: space-between; /* Espaço entre o texto e o botão */
-  align-items: center; /* Centraliza verticalmente os itens */
+  justify-content: space-between;
+  /* Espaço entre o texto e o botão */
+  align-items: center;
 
   border: 2px solid none;
   border-radius: 12px;
-  background-color: white;
+  background: white url(../img/icons/checkbox-default.svg) no-repeat left center;
+  background-size: 20px 20px;
+  background-position: 12px center;
+
 
   width: 627px;
   height: 49px;
@@ -26,11 +29,37 @@ li {
 
   font-weight: 500;
   cursor: pointer;
+
 }
 
-/* Resetando o button */
-li > button:hover, li > button { 
+li:hover {
+  background: white url(../img/icons/checkbox-hover.svg) no-repeat left center;
+  background-size: 20px 20px;
+  background-position: 12px center;
+}
+
+li.checked {
+  background: white url(../img/icons/checkbox-checked.svg) no-repeat left center;
+  background-size: 20px 20px;
+  background-position: 12px center;
+}
+
+span {
+  padding-left: 40px;
+
+}
+
+li > button {
+  width: 40px;
+  height: 40px;
   border: none;
-  background: transparent;  
+  background: transparent url('../img/icons/delete.svg') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
 }
 
+li > button:hover {
+  background-color: transparent;
+  background-size: 36px;
+  border: none;
+}

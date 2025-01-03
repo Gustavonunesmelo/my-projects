@@ -35,20 +35,3 @@
     }
   }
 }
-
-ul {
-  list-style: none;
-}
-
-button {
-  background-color: #CA3884;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #A52C6B;
-}

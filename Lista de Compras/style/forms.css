@@ -2,17 +2,36 @@ form {
   margin-top: .5rem;
 }
 
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: #CA3884;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #A52C6B;
+}
+
 #shoppingForm {
   display: flex;
   justify-items: center;
   gap: 1rem;
 
-  & input{
-    all: unset; 
+  & input {
+    all: unset;
+
+
   }
 
-  input, 
-  textarea, 
+  input,
+  textarea,
   select {
     appearance: none;
 
@@ -20,27 +39,22 @@ form {
     border-radius: 10px;
 
     background: white;
-    
+
     padding: 11px;
     width: 451px;
-    
+
   }
 
   input:hover {
     border: 2px solid #B9C2D0;
   }
 
-  #item:focus { 
+  #item:focus {
     border: 2px solid #A52C6B;
   }
 
   .add {
     width: 161px;
+    font-size: 16px;
   }
 }
-
-
-
-
-
-

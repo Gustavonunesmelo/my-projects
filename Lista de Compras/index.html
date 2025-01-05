@@ -15,14 +15,14 @@
     rel="stylesheet">
 </head>
 
-<body>
-  <div id="list" class="container">
+<body class="container">
+  <div id="list">
     <div class="title">
       <img class="logo" src="img/logo.png" alt="quicklist Logo"><br>
     </div>
     <div class="main">
       <div>
-        <img src="img/link button.png" alt="">
+        <a href="#" class=""> Voltar</a>
         <h2>Compras da semana</h2>
       </div>
       <form id="shoppingForm">
@@ -62,21 +62,23 @@
         list.appendChild(listItem);
         itemInput.value = '';
       }
-
     });
 
     function removeItem(button) {
       const listItem = button.parentElement;
-      list.removeChild(listItem); // Remove o item da lista
+      list.removeChild(listItem);
 
-      // Exibe mensagem de alerta
       const alertMessage = document.getElementById('alertMessage');
-      alertMessage.textContent = "Item removido com sucesso!";
 
-      // Remove a mensagem após 2 segundos
-      setTimeout(() => {
-        alertMessage.textContent = '';
-      }, 2000);
+      if (alertMessage.style.display !== 'flex') {
+        alertMessage.style.display = 'flex';
+        alertMessage.textContent = "O item foi removido da lista!";
+
+        setTimeout(() => {
+          alertMessage.textContent = '';
+          alertMessage.style.display = 'none';
+        }, 2000);
+      }
     }
   </script>
 </body>

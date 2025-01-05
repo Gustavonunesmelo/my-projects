@@ -1,5 +1,27 @@
 #alertMessage {
+  display: none;
+  align-items: center;
  
+  color: white;
+  font-weight: 500;
+
+  border: none; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 12px;
+
+  background: #C93847 url(../img/icons/warning.svg) no-repeat left center;
+  background-size: 20px 20px;
+  background-position: 12px center;
+ 
+  padding: 0 16px 0 40px; 
+  margin: 10px; 
+
+  max-width: 627px; 
+  height: auto; 
+  line-height: 44px; 
+  box-sizing: border-box; 
+  text-align: center; 
+
 }
 
 

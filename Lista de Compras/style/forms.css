@@ -1,5 +1,5 @@
 form {
-  margin-top: .5rem;
+  margin-block: .5rem;
 }
 
 ul {
@@ -10,9 +10,11 @@ button {
   background-color: #CA3884;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 7px;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: 500;
+  max-width: 160px;
 }
 
 button:hover {
@@ -26,8 +28,6 @@ button:hover {
 
   & input {
     all: unset;
-
-
   }
 
   input,
@@ -40,9 +40,10 @@ button:hover {
 
     background: white;
 
-    padding: 11px;
-    width: 451px;
-
+    padding: 4px 0 4px 15px;
+    width: 100%;
+    max-width: 465px;
+    height: 44px;
   }
 
   input:hover {
@@ -51,10 +52,25 @@ button:hover {
 
   #item:focus {
     border: 2px solid #A52C6B;
+    box-shadow: 0 0 4px rgba(165, 44, 107, 0.5);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
 
   .add {
-    width: 161px;
+    width: auto;
+    max-width: 161px;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  #shoppingForm {
+    flex-direction: column; 
+  }
+
+  #shoppingForm input,
+  #shoppingForm .add {
+    max-width: 100%; 
   }
 }

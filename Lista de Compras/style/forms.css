@@ -20,6 +20,7 @@ button {
 button:hover {
   background-color: #A52C6B;
 }
+ 
 
 #shoppingForm {
   display: flex;
@@ -67,6 +68,7 @@ button:hover {
 @media (max-width: 768px) {
   #shoppingForm {
     flex-direction: column; 
+    max-width: 325px;
   }
 
   #shoppingForm input,

@@ -38,14 +38,14 @@
   }
 }
 
-@media (min-width: 768px) {
-  #list .main {
-    padding-left: 15%;
-  }
+.back {
+  text-decoration: none;
+  color: #CA3884;
 }
 
-@media (min-width: 1024px) {
-  #list .main {
-    padding-left: 25%;
+@media (max-width: 390px) {
+  .container {
+    max-width: 390px;
+    padding: 8px; 
   }
 }
